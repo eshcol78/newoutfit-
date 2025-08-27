@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!--Import Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Fashion</title>
+    <!--Style-->
+    <style>
+        header {
+            background: url('img/main.jpg');
+            background-position: center;
+            background-size: cover;
+            min-height: 1000px;
+        }
+        .section {
+            padding-bottom: 4vw;
+            padding-top: 4vw;
+        }
+        .tabs .indicator {
+            background-color: #000;
+        }
+        .tabs .tab a:hover, 
+        .tabs .tab a:focus.active {
+            background-color: transparent;
+        }
+        @media screen and (max-width: 650px) {
+            header {
+                min-height: 500px;
+            }
+        }
+        /* Added for tab content visibility */
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body> 
+<header>
+    <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo">o_o love</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#COLLECTIONS">COLLECTIONS</a></li>
+                <li><a href="#SHOPS">SHOPS</a></li>
+                <li><a href="#CONTACTS">CONTACTS</a></li>
+            </ul>
+            <ul class="sidenav grey darken-4 center" id="mobile">
+                <li><h3 class="white-text center">o_o love</h3></li>
+                <li><a href="#" class="waves-effect waves-light white-text">HOME</a></li>
+                <li><a href="#" class="waves-effect waves-light white-text">COLLECTIONS</a></li>
+                <li><a href="#" class="waves-effect waves-light white-text">SHOPS</a></li>
+                <li><a href="#" class="waves-effect waves-light white-text">CONTACTS</a></li>   
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Image with description -->
+<section class="container section" id="COLLECTIONS">
+    <div class="row">
+        <div class="col s12 l6">
+            <img src="img/leather.jpg" alt="Leather products" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6">
+            <h2 class="black-text">LEATHER</h2>
+            <p>Our premium leather collection combines timeless elegance with modern craftsmanship. Each piece is handcrafted using ethically sourced, full-grain leather that develops a beautiful patina over time. From sleek wallets to statement jackets, our leather goods are designed to last a lifetime while making a bold fashion statement.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l6 push-l6">
+            <img src="img/jeans.jpg" alt="Levi's jeans" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l6">
+            <h3 class="black-text">LEVI'S JEANS</h3>
+            <p>The iconic Levi's jeans in our collection represent the perfect blend of heritage and contemporary style. Made with premium denim and featuring the classic red tab, these jeans offer exceptional comfort and durability. Whether you prefer the original 501 fit or modern skinny cuts, we have the perfect pair for every body type and style preference.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l6">
+            <img src="img/watch.jpg" alt="Luxury watch" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6">
+            <h4 class="black-text">WATCH</h4>
+            <p>Our curated selection of luxury timepieces combines precision engineering with exquisite design. From minimalist dress watches to robust chronographs, each watch in our collection is a masterpiece of horology. Featuring Swiss movements and premium materials, these watches are investments that will stand the test of time while elevating any outfit.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l6 push-l6">
+            <img src="img/girlsuit.jpg" alt="Women's suit" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l6">
+            <h5 class="black-text">GIRLSUIT</h5>
+            <p>Empowering women through tailored sophistication, our suits collection redefines professional elegance. Designed with precision cuts and premium fabrics, these suits offer both comfort and confidence. From boardroom-ready pinstripes to contemporary pastel options, our suits are crafted to make a statement while ensuring all-day comfort.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/p1.jpg" alt="Fashion show" class="responsive-img">
+    </div>
+</div>
+
+<section class="container section" id="SHOPS">
+    <div class="row">
+        <div class="col s12 l5">
+            <h5 class="black-text">NEW TREND INFO...</h5>
+            <p>Discover the latest fashion revolution with our Spring/Summer collection that blends sustainability with cutting-edge design. This season, we're embracing bold colors, innovative textures, and eco-conscious materials that don't compromise on style. Our designers have created pieces that transition effortlessly from day to night while making minimal environmental impact.</p>
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#dg" class="black-text">DESIGN DETAILS</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#fs" class="black-text">FASHION DETAILS</a>
+                </li>
+            </ul>
+            <div id="dg" class="col s12 tab-content">
+                <p class="flow-text black-text">NEW DESIGN</p>
+                <p>Our design philosophy centers on clean lines, functional elegance, and unexpected details. The current collection features innovative seam placements, convertible elements, and hidden pockets that combine form with function. We've incorporated temperature-regulating fabrics and adjustable fits to create garments that adapt to your lifestyle.</p>
+                <p>Each piece undergoes rigorous prototyping to ensure perfect drape and movement. Our designers work with master pattern makers to create silhouettes that flatter diverse body types while maintaining our distinctive aesthetic. The result is a collection that feels both familiar and excitingly new.</p>
+            </div>
+            <div id="fs" class="col s12 tab-content">
+                <p class="flow-text black-text">NEW FASHION</p>
+                <p>This season's fashion direction embraces bold self-expression through vibrant color blocking and mixed textures. We're seeing a resurgence of 90s influences reinterpreted with modern sensibilities - think oversized blazers paired with sleek bodysuits, or cargo pants elevated with luxurious fabrics.</p>
+                <p>Sustainability remains at the core of our fashion ethos. Our new line features 30% more recycled materials than previous collections, including innovative fabrics made from ocean plastics and agricultural waste. These eco-conscious choices don't compromise on quality or style, proving that fashion can be both beautiful and responsible.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Second Parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/p2.jpg" alt="Fashion accessories" class="responsive-img">
+    </div>
+</div>
+
+<section class="container section" id="CONTACTS">
+    <div class="row">
+        <div class="col s12 l5">
+            <h3 class="black-text">GET IN TOUCH</h3>
+            <p>We'd love to hear from you! Whether you have questions about our collections, need styling advice, or want to collaborate, our team is ready to assist. At o_o love, we believe fashion should be accessible and personal, and we're committed to creating meaningful connections with our community.</p>
+            <p>Visit us at our flagship store in downtown or reach out through our digital channels. Our customer service team is available seven days a week to ensure your experience with our brand is as exceptional as our products. Follow us on social media for exclusive previews and styling tips from our creative directors.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form action="#" method="POST">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email" required>
+                    <label for="email">EMAIL HERE</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" required></textarea>
+                    <label for="message">MESSAGE HERE</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker" required>
+                    <label for="date">CHOOSE YOUR DATE</label>
+                </div>
+                <div class="input-field">
+                    <p>SKILLS REQUIRED...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="skills" value="designing">
+                            <span>DESIGNING</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="skills" value="modeling">
+                            <span>MODELING</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn black white-text waves-effect waves-light" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="page-footer grey darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h6>ABOUT US</h6>
+                <p>Founded in 2015, o_o love has grown from a small boutique to an internationally recognized fashion house. Our mission is to create clothing that empowers individuals while respecting people and planet. We partner with ethical manufacturers and support emerging designers through our annual talent incubator program.</p>
+            </div> 
+            <div class="col s12 l4 offset-l2">
+                <h6>CONNECT WITH US</h6>
+                <ul>
+                    <li><a href="#" class="white-text">FACEBOOK</a></li>
+                    <li><a href="#" class="white-text">TWITTER</a></li>
+                    <li><a href="#" class="white-text">INSTAGRAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-3">
+        <div class="container center cyan-text">
+            &copy; 2023 o_oLOVE
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Initialize components
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs({
+            onShow: function(tab) {
+                // Hide all tab contents first
+                $('.tab-content').removeClass('active');
+                // Show active tab content
+                $(tab).addClass('active');
+            }
+        });
+        $('.datepicker').datepicker({
+            format: 'dd mmmm yyyy',
+            autoClose: true,
+            yearRange: [2020, 2030]
+        });
+        
+        // Activate first tab by default
+        $('.tab-content').first().addClass('active');
+    });
+</script>
+</body>
+</html>
