@@ -22,8 +22,8 @@
             min-height: 1000px;
         }
         .section {
-            padding-bottom: 4vw;
-            padding-top: 4vw;
+            padding-bottom: 5vw;
+            padding-top: 5vw;
         }
         .tabs .indicator {
             background-color: #000;
@@ -36,13 +36,6 @@
             header {
                 min-height: 500px;
             }
-        }
-        /* Added for tab content visibility */
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
         }
     </style>
 </head>
@@ -87,7 +80,7 @@
             <img src="img/jeans.jpg" alt="Levi's jeans" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6 pull-l6">
-            <h3 class="black-text">LEVI'S JEANS</h3>
+            <h2 class="black-text">LEVI'S JEANS</h2>
             <p>The iconic Levi's jeans in our collection represent the perfect blend of heritage and contemporary style. Made with premium denim and featuring the classic red tab, these jeans offer exceptional comfort and durability. Whether you prefer the original 501 fit or modern skinny cuts, we have the perfect pair for every body type and style preference.</p>
         </div>
     </div>
@@ -96,7 +89,7 @@
             <img src="img/watch.jpg" alt="Luxury watch" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6">
-            <h4 class="black-text">WATCH</h4>
+            <h2 class="black-text">WATCH</h2>
             <p>Our curated selection of luxury timepieces combines precision engineering with exquisite design. From minimalist dress watches to robust chronographs, each watch in our collection is a masterpiece of horology. Featuring Swiss movements and premium materials, these watches are investments that will stand the test of time while elevating any outfit.</p>
         </div>
     </div>
@@ -105,7 +98,7 @@
             <img src="img/girlsuit.jpg" alt="Women's suit" class="responsive-img materialboxed">
         </div>
         <div class="col s12 l6 pull-l6">
-            <h5 class="black-text">GIRLSUIT</h5>
+            <h2 class="black-text">GIRLSUIT</h2>
             <p>Empowering women through tailored sophistication, our suits collection redefines professional elegance. Designed with precision cuts and premium fabrics, these suits offer both comfort and confidence. From boardroom-ready pinstripes to contemporary pastel options, our suits are crafted to make a statement while ensuring all-day comfort.</p>
         </div>
     </div>
@@ -121,7 +114,7 @@
 <section class="container section" id="SHOPS">
     <div class="row">
         <div class="col s12 l5">
-            <h5 class="black-text">NEW TREND INFO...</h5>
+            <h3 class="black-text">NEW TREND INFO...</h3>
             <p>Discover the latest fashion revolution with our Spring/Summer collection that blends sustainability with cutting-edge design. This season, we're embracing bold colors, innovative textures, and eco-conscious materials that don't compromise on style. Our designers have created pieces that transition effortlessly from day to night while making minimal environmental impact.</p>
         </div>
         <div class="col s12 l6 offset-l1">
@@ -133,12 +126,12 @@
                     <a href="#fs" class="black-text">FASHION DETAILS</a>
                 </li>
             </ul>
-            <div id="dg" class="col s12 tab-content">
+            <div id="dg" class="col s12">
                 <p class="flow-text black-text">NEW DESIGN</p>
                 <p>Our design philosophy centers on clean lines, functional elegance, and unexpected details. The current collection features innovative seam placements, convertible elements, and hidden pockets that combine form with function. We've incorporated temperature-regulating fabrics and adjustable fits to create garments that adapt to your lifestyle.</p>
                 <p>Each piece undergoes rigorous prototyping to ensure perfect drape and movement. Our designers work with master pattern makers to create silhouettes that flatter diverse body types while maintaining our distinctive aesthetic. The result is a collection that feels both familiar and excitingly new.</p>
             </div>
-            <div id="fs" class="col s12 tab-content">
+            <div id="fs" class="col s12">
                 <p class="flow-text black-text">NEW FASHION</p>
                 <p>This season's fashion direction embraces bold self-expression through vibrant color blocking and mixed textures. We're seeing a resurgence of 90s influences reinterpreted with modern sensibilities - think oversized blazers paired with sleek bodysuits, or cargo pants elevated with luxurious fabrics.</p>
                 <p>Sustainability remains at the core of our fashion ethos. Our new line features 30% more recycled materials than previous collections, including innovative fabrics made from ocean plastics and agricultural waste. These eco-conscious choices don't compromise on quality or style, proving that fashion can be both beautiful and responsible.</p>
@@ -162,20 +155,20 @@
             <p>Visit us at our flagship store in downtown or reach out through our digital channels. Our customer service team is available seven days a week to ensure your experience with our brand is as exceptional as our products. Follow us on social media for exclusive previews and styling tips from our creative directors.</p>
         </div>
         <div class="col s12 l5 offset-l2">
-            <form action="#" method="POST">
+            <form action="https://example.com/submit" method="POST">
                 <div class="input-field">
                     <i class="material-icons prefix">email</i>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                     <label for="email">EMAIL HERE</label>
                 </div>
                 <div class="input-field">
                     <i class="material-icons prefix">message</i>
-                    <textarea id="message" class="materialize-textarea" required></textarea>
+                    <textarea id="message" name="message" class="materialize-textarea" required></textarea>
                     <label for="message">MESSAGE HERE</label>
                 </div>
                 <div class="input-field">
                     <i class="material-icons prefix">date_range</i>
-                    <input type="text" id="date" class="datepicker" required>
+                    <input type="text" id="date" name="date" class="datepicker" required>
                     <label for="date">CHOOSE YOUR DATE</label>
                 </div>
                 <div class="input-field">
@@ -205,11 +198,11 @@
     <div class="container">
         <div class="row">
             <div class="col s12 l6">
-                <h6>ABOUT US</h6>
+                <h5>ABOUT US</h5>
                 <p>Founded in 2015, o_o love has grown from a small boutique to an internationally recognized fashion house. Our mission is to create clothing that empowers individuals while respecting people and planet. We partner with ethical manufacturers and support emerging designers through our annual talent incubator program.</p>
             </div> 
             <div class="col s12 l4 offset-l2">
-                <h6>CONNECT WITH US</h6>
+                <h5>CONNECT WITH US</h5>
                 <ul>
                     <li><a href="#" class="white-text">FACEBOOK</a></li>
                     <li><a href="#" class="white-text">TWITTER</a></li>
@@ -220,7 +213,7 @@
     </div>
     <div class="footer-copyright grey darken-3">
         <div class="container center cyan-text">
-            &copy; 2023 o_oLOVE
+            &copy; 2025 o_oLOVE
         </div>
     </div>
 </footer>
@@ -233,22 +226,12 @@
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
-        $('.tabs').tabs({
-            onShow: function(tab) {
-                // Hide all tab contents first
-                $('.tab-content').removeClass('active');
-                // Show active tab content
-                $(tab).addClass('active');
-            }
-        });
+        $('.tabs').tabs();
         $('.datepicker').datepicker({
             format: 'dd mmmm yyyy',
             autoClose: true,
             yearRange: [2020, 2030]
         });
-        
-        // Activate first tab by default
-        $('.tab-content').first().addClass('active');
     });
 </script>
 </body>
